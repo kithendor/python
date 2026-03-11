@@ -1,3 +1,36 @@
+# colliders
+
+#Πριν την while
+
+    game_over=False
+    font = pygame.font.SysFont(None, 60)
+
+#Μέσα στην while, πριν απο τα draw
+
+    enemy_rect = pygame.Rect(enemy_x, enemy_y, enemy_w, enemy_h) #collider για τον enemy
+    
+    for bullet in bullets:
+        bullet_rect = pygame.Rect(bullet[0], bullet[1], bullet_w, bullet_h) #collider για κάθε σφαίρα
+        if bullet_rect.colliderect(enemy_rect): #αν το collider της σφαιρας αγγίξει τον enemy
+            bullets.remove(bullet)
+            enemy_y = 0
+            enemy_x = random.randint(0, WIDTH - enemy_w)
+            break
+
+
+    # TASK 1: Δημιουργήστε collider για τον player
+    # TASK 2: Αν το collider του player αγγιξει τον enemy τότε game_over=True
+
+#Μέσα στην while, μετά τα draw
+
+    if game_over:
+        text = font.render("GAME OVER", True, (255, 255, 255))
+        screen.blit(text, (WIDTH // 2 - 150, HEIGHT // 2 - 30))
+
+
+
+
+
 # Bullet settings
     
     bullet_w = 6
