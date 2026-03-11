@@ -1,4 +1,5 @@
 # Bullet settings
+
 bullet_w = 6
 bullet_h = 12
 bullet_speed = 8
