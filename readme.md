@@ -1,12 +1,12 @@
 # Bullet settings
-
-bullet_w = 6
-bullet_h = 12
-bullet_speed = 8
-bullet_color = (255, 255, 0)
-bullets = []
-fire_delay = 250   # milliseconds
-last_shot = 0
+    
+    bullet_w = 6
+    bullet_h = 12
+    bullet_speed = 8
+    bullet_color = (255, 255, 0)
+    bullets = []
+    fire_delay = 250   # milliseconds
+    last_shot = 0
 
 #...
 
