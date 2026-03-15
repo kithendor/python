@@ -1,3 +1,23 @@
+# Grapgics
+
+#Στην αρχή του προγράμματος
+
+    from os import path
+    img_dir = path.join(path.dirname(__file__),'img')
+
+#Κάτω απο τα player settings
+
+    player_img = pygame.image.load(path.join(img_dir,"playerShip1_blue.png")).convert()
+    player_img = pygame.transform.scale(player_img,(player_w,player_h))
+    player_img.set_colorkey((0,0,0))
+
+#Αντικατάσταση του draw_rect στον player με
+
+    screen.blit(player_img, (player_x, player_y))
+
+
+
+
 # colliders
 
 #Πριν την while
