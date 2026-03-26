@@ -125,5 +125,5 @@ link: https://trinket.io/features/pygame
 
     pygame.display.flip()
 
-pygame.quit()
-sys.exit()
+    pygame.quit()
+    sys.exit()
