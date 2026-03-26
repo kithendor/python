@@ -122,8 +122,8 @@ link: https://trinket.io/features/pygame
         if game_over:
             text = font.render("GAME OVER", True, (255, 255, 255))
             screen.blit(text, (WIDTH // 2 - 150, HEIGHT // 2 - 30))
-
-    pygame.display.flip()
-
+    
+        pygame.display.flip()
+    
     pygame.quit()
     sys.exit()
